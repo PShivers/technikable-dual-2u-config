@@ -21,12 +21,14 @@
 / {
     chosen { zmk,matrix_transform = &dual_2u_transform; };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
-        tri_layer {
-            if-layers = <2 3>;
-            then-layer = <3>;
+    combos {
+        compatible = "zmk,combos";
+
+        capslock {
+            bindings = <&kp CAPS>;
+            key-positions = <24 35>;
         };
     };
 
@@ -35,10 +37,10 @@
 
         base_layer {
             bindings = <
-&kp TAB        &kp W  &kp L     &kp Y  &kp P                   &kp B               &kp Z  &kp F  &kp O      &kp U    &kp SEMI  &kp DEL
-&kp BACKSPACE  &kp C  &kp R     &kp S  &kp T                   &kp G               &kp M  &kp N  &kp E      &kp I    &kp A     &kp SQT
-&kp LSHFT      &kp Q  &kp J     &kp V  &kp D                   &kp K               &kp X  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                      &kp LALT  &to 2  &mt LEFT_CONTROL SPACE         &lt 1 ENTER         &to 3  &tog 2
+&kp TAB        &kp W  &kp L     &kp Y  &kp P                   &kp B               &kp Z  &kp F  &kp O       &kp U    &kp SEMI  &kp DEL
+&kp BACKSPACE  &kp C  &kp R     &kp S  &kp T                   &kp G               &kp M  &kp N  &kp E       &kp I    &kp A     &kp SQT
+&kp LSHFT      &kp Q  &kp J     &kp V  &kp D                   &kp K               &kp X  &kp H  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+                      &kp LALT  &to 2  &mt LEFT_CONTROL SPACE         &lt 1 ENTER         &mo 3  &bl BL_TOG
             >;
         };
 
