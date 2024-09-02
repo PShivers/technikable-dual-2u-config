@@ -40,7 +40,7 @@
 &kp TAB        &kp W  &kp L     &kp Y  &kp P                   &kp B               &kp Z  &kp F  &kp O       &kp U    &kp SEMI  &kp DEL
 &kp BACKSPACE  &kp C  &kp R     &kp S  &kp T                   &kp G               &kp M  &kp N  &kp E       &kp I    &kp A     &kp SQT
 &kp LSHFT      &kp Q  &kp J     &kp V  &kp D                   &kp K               &kp X  &kp H  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-                      &kp LALT  &to 2  &mt LEFT_CONTROL SPACE         &lt 1 ENTER         &mo 3  &bl BL_TOG
+                      &kp LALT  &mo 2  &mt LEFT_CONTROL SPACE         &lt 1 ENTER         &mo 3  &bl BL_TOG
             >;
         };
 
@@ -55,19 +55,19 @@
 
         num_layer {
             bindings = <
-&kp ESCAPE  &kp F9  &kp F10  &kp F11  &kp F12  &trans                &trans  &kp N7        &kp N8        &kp N9        &trans  &trans
-&trans      &kp F5  &kp F6   &kp F7   &kp F8   &trans                &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&trans      &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(FSLH)          &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                    &trans   &trans   &trans                 &kp N0          &trans        &trans
+&kp ESCAPE  &kp F9  &kp F10       &kp F11  &kp F12  &kp LA(F4)                  &kp K_CALC  &kp N7        &kp N8        &kp N9        &kp KP_MULTIPLY  &kp KP_DIVIDE
+&trans      &kp F5  &kp F6        &kp F7   &kp F8   &kp DEL                     &trans      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS         &kp MINUS
+&trans      &kp F1  &kp F2        &kp F3   &kp F4   &kp LC(FSLH)                &kp EQUAL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
+                    &kp LEFT_WIN  &trans   &trans                 &kp KP_ENTER              &kp N0        &trans
             >;
         };
 
         sym_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans                &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp GREATER_THAN      &kp TILDE
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &kp NON_US_BACKSLASH  &trans
-                &trans  &trans  &trans          &trans          &trans                &trans
+&trans  &trans  &kp LG(LC(F4))    &kp LG(TAB)  &kp LG(LC(D))      &trans          &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans                &trans
+&trans  &trans  &kp LG(LC(LEFT))  &kp LG(D)    &kp LG(LC(RIGHT))  &trans          &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp GREATER_THAN      &kp TILDE
+&trans  &trans  &trans            &trans       &trans             &trans          &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &kp NON_US_BACKSLASH  &trans
+                &trans            &trans       &trans                     &trans          &trans                &trans
             >;
         };
     };
