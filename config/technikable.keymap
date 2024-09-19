@@ -37,10 +37,10 @@
 
         base_layer {
             bindings = <
-&kp TAB        &kp W  &kp L     &kp Y  &kp P                   &kp B               &kp Z  &kp F              &kp O         &kp U    &kp SEMI  &kp DEL
-&kp BACKSPACE  &kp C  &kp R     &kp S  &mt LEFT_SHIFT T        &kp G               &kp M  &mt RIGHT_SHIFT N  &kp E         &kp I    &kp A     &kp SQT
-&kp LEFT_WIN   &kp Q  &kp J     &kp V  &kp D                   &kp K               &kp X  &kp H              &kp COMMA     &kp DOT  &kp FSLH  &kp CAPS
-                      &kp LALT  &mo 2  &mt LEFT_CONTROL SPACE         &lt 1 ENTER         &mo 3              &kp LEFT_WIN
+&kp TAB         &kp W  &kp L     &kp Y  &kp P                   &kp B               &kp Z  &kp F  &kp O         &kp U    &kp SEMI  &kp DEL
+&kp BACKSPACE   &kp C  &kp R     &kp S  &kp T                   &kp G               &kp M  &kp N  &kp E         &kp I    &kp A     &kp SQT
+&kp LEFT_SHIFT  &kp Q  &kp J     &kp V  &kp D                   &kp K               &kp X  &kp H  &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                       &kp LALT  &mo 2  &mt LEFT_CONTROL SPACE         &lt 1 ENTER         &mo 3  &kp LEFT_WIN
             >;
         };
 
