@@ -37,10 +37,10 @@
 
         base_layer {
             bindings = <
-&kp TAB        &kp W  &kp L     &kp Y  &kp P                   &kp B               &kp Z  &kp F  &kp O       &kp U    &kp SEMI  &kp DEL
-&kp BACKSPACE  &kp C  &kp R     &kp S  &kp T                   &kp G               &kp M  &kp N  &kp E       &kp I    &kp A     &kp SQT
-&kp LSHFT      &kp Q  &kp J     &kp V  &kp D                   &kp K               &kp X  &kp H  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-                      &kp LALT  &mo 2  &mt LEFT_CONTROL SPACE         &lt 1 ENTER         &mo 3  &bl BL_TOG
+&kp TAB        &kp W  &kp L     &kp Y  &kp P                   &kp B               &kp Z  &kp F              &kp O         &kp U    &kp SEMI  &kp DEL
+&kp BACKSPACE  &kp C  &kp R     &kp S  &mt LEFT_SHIFT T        &kp G               &kp M  &mt RIGHT_SHIFT N  &kp E         &kp I    &kp A     &kp SQT
+&kp LEFT_WIN   &kp Q  &kp J     &kp V  &kp D                   &kp K               &kp X  &kp H              &kp COMMA     &kp DOT  &kp FSLH  &kp CAPS
+                      &kp LALT  &mo 2  &mt LEFT_CONTROL SPACE         &lt 1 ENTER         &mo 3              &kp LEFT_WIN
             >;
         };
 
@@ -64,7 +64,7 @@
 
         sym_layer {
             bindings = <
-&trans  &trans  &kp LG(LC(F4))    &kp LG(TAB)  &kp LG(LC(D))      &trans          &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans                &trans
+&trans  &trans  &kp LG(LC(F4))    &kp LG(TAB)  &kp LG(LC(D))      &trans          &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS  &trans                &trans
 &trans  &trans  &kp LG(LC(LEFT))  &kp LG(D)    &kp LG(LC(RIGHT))  &trans          &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp GREATER_THAN      &kp TILDE
 &trans  &trans  &trans            &trans       &trans             &trans          &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &kp NON_US_BACKSLASH  &trans
                 &trans            &trans       &trans                     &trans          &trans                &trans
